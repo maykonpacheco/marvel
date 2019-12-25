@@ -8,8 +8,6 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.img`
-border: 1px solid #fff;
 width:130px;
-height: 50px;
-  
+height: 50px;  
 `;
