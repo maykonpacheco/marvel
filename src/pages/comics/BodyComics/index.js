@@ -4,7 +4,7 @@ import { Element } from 'react-scroll';
 
 import { Container, Title, Frame, Scrolling } from "./styles";
 
-export const Body = () => {
+export const BodyComics = () => {
   return (
     <Container>
       <Title>Populares na Marvel</Title>

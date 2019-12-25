@@ -2,14 +2,14 @@ import React from "react";
 
 // import { Container } from './styles';
 
-import { Header } from "./Header";
-import { Body } from './Body';
+import { HeaderComics } from "./HeaderComics";
+import { BodyComics } from './BodyComics';
 
 export default function comics() {
   return (
     <>
-      <Header />
-      <Body />
+      <HeaderComics />
+      <BodyComics />
     </>
   );
 }
