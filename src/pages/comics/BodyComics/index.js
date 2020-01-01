@@ -10,22 +10,22 @@ import {
   BackgroundBody
 } from "./styles";
 
-import api from '../../../store/actions';
+import api from "../../../store/actions";
 
 export const BodyComics = () => {
-  let { comics } = useSelector(state => state);
-  const dispatch = useDispatch();
+  
+  useEffect(() => {
+    async function comics() {
+      const response = await api.get(``);
+      console.log(response.data.data.results, "response");
+    }
+    comics();
+  }, []);
 
- 
-    const response = api.get(`/`);
-    console.log(response, "/")
- 
- 
   return (
     <BackgroundBody>
       <TitleCategoryComics>Populares na Marvel</TitleCategoryComics>
       <Container>
-       
         <ScrollingImageComics>
           <ImageComicsBody></ImageComicsBody>
         </ScrollingImageComics>
