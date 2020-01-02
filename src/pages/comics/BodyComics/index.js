@@ -10,24 +10,18 @@ import {
   BackgroundBody
 } from "./styles";
 
-import api from "../../../store/actions";
-
-export const BodyComics = () => {
+export const BodyComics = ({popularMarvel}) => {
   
-  useEffect(() => {
-    async function comics() {
-      const response = await api.get(``);
-      console.log(response.data.data.results, "response");
-    }
-    comics();
-  }, []);
+  console.log(popularMarvel, "bsody")
 
   return (
     <BackgroundBody>
       <TitleCategoryComics>Populares na Marvel</TitleCategoryComics>
       <Container>
         <ScrollingImageComics>
-          <ImageComicsBody></ImageComicsBody>
+        <ImageComicsBody></ImageComicsBody>
+
+
         </ScrollingImageComics>
       </Container>
     </BackgroundBody>
