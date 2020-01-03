@@ -20,11 +20,10 @@ export const ScrollingImageComics = styled.div`
   display: flex; 
 `;
 
-export const ImageComicsBody = styled.div`
+export const ImageComicsBody = styled.img`
   margin: 1px;
   height: 200px;
   width: 140px;
-  border: 1px solid #ffffff;
 `;
 
 export const BackgroundBody = styled.div`

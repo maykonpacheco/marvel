@@ -9,15 +9,15 @@ import { BodyComics } from "./BodyComics";
 import api from "../../store/actions";
 
 export default function Comics() {
-  const [popularMarvel, setPopularMarvel] = useState();
+  const [popularMarvel, setPopularMarvel] = useState([]);
 
   useEffect(() => {
-    async function popularMarvell() {
+    async function comicsMarvel() {
       const res = await api.get(``);
       const response = res.data.data.results;
       setPopularMarvel(response)
     }
-    popularMarvell();
+    comicsMarvel();
   },[]);
 
 
