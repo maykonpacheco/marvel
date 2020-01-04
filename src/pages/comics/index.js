@@ -6,19 +6,11 @@ import { useSelector } from "react-redux";
 import { HeaderComics } from "./HeaderComics";
 import { BodyComics } from "./BodyComics";
 
-import api from "../../store/actions";
 
 export default function Comics() {
   const [popularMarvel, setPopularMarvel] = useState([]);
 
-  useEffect(() => {
-    async function comicsMarvel() {
-      const res = await api.get(``);
-      const response = res.data.data.results;
-      setPopularMarvel(response)
-    }
-    comicsMarvel();
-  },[]);
+  
 
 
   return (

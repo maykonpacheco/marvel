@@ -1,9 +1,11 @@
 import React from 'react';
 
-import store from './store/reducer';
+import configureStore from './store/index';
 import { Provider } from 'react-redux';
 import GlobalStyles from './styles/global';
 import Routes from './routes';
+
+const store = configureStore();
 
 export default function App() {
   return (

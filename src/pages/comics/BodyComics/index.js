@@ -11,7 +11,6 @@ import {
 } from "./styles";
 
 export const BodyComics = ({ popularMarvel }) => {
-  console.log(popularMarvel, "bsody");
 
   return (
     <BackgroundBody>
