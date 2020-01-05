@@ -3,12 +3,12 @@ import React from "react";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import comics from './pages/comics';
+import main from './pages/main';
 
 const Routes = () => (
     <BrowserRouter>
         <Switch>
-            <Route exact patch='/' component={comics} />
+            <Route exact patch='/' component={main} />
         </Switch>
     </BrowserRouter>
 );

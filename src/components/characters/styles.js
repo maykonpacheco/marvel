@@ -11,17 +11,17 @@ export const Container = styled.div`
   
 `;
 
-export const TitleCategoryComics = styled.div`
+export const TitleCategoryCharacters = styled.div`
   color: #ffffff;
   padding: 0 0 10px 0;
-  margin-top: 10px;
+  margin-top: 20px;
 `;
 
-export const ScrollingImageComics = styled.div`
+export const ScrollingImageCharacters = styled.div`
   display: flex; 
 `;
 
-export const ImageComicsBody = styled.img`
+export const ImageCharactersBody = styled.img`
   margin: 1px;
   height: 200px;
   width: 140px;
@@ -31,5 +31,5 @@ export const BackgroundBody = styled.div`
   background-color: #222;
   width: 100%;
   height: 100%;
-  padding: 10px;
+  padding: 5px 0 0 10px;
 `;

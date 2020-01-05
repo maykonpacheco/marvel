@@ -5,31 +5,36 @@ export const Container = styled.div`
   overflow: scroll;
   white-space: nowrap;
 
- ::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     display: none;
   }
-  
 `;
 
-export const TitleCategoryComics = styled.div`
+export const TitleCategoryCreator = styled.div`
   color: #ffffff;
   padding: 0 0 10px 0;
-  margin-top: 10px;
+  margin-top: 20px;
 `;
 
 export const ScrollingImageComics = styled.div`
-  display: flex; 
+  display: flex;
 `;
 
-export const ImageComicsBody = styled.img`
+export const FrameBodyCreator = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 1px;
   height: 200px;
   width: 140px;
+  border: 1px solid #333;
+   h2 {
+    color: #9e9e9e;
+  }
 `;
 
 export const BackgroundBody = styled.div`
   background-color: #222;
   width: 100%;
   height: 100%;
-  padding: 10px;
 `;

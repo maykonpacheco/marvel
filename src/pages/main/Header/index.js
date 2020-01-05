@@ -5,8 +5,7 @@ import { Container, Logo } from "./styles";
 
 import logo from "../../../assets/marvel.png";
 
-export const HeaderComics = () => {
-  
+export const HeaderMain = () => {
 
   return (
     <Container>
